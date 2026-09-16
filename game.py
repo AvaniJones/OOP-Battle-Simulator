@@ -18,20 +18,20 @@ def battle(hero: Hero, enemy: Goblin):
 
 def main():
     """Open the arena and introduce its first opponent."""
-    print(f"Welcome to {ARENA_NAME}!")
+    print(f"You are entering {ARENA_NAME}!")
     print("༼ ᓄºل͟º ༽ᓄ   ᕦ(ò_óˇ)ᕤ")
-    print("The gates are opening...")
+    print("The gates are opening. BEWARE, for there is danger in these grounds...")
 
     goblin = Goblin("Thorne")
-    print(f"{goblin.name} enters the arena with {goblin.health} health.")
+    print(f"{goblin.name} spawns in {ARENA_NAME} with {goblin.health} health.")
 
     secondGoblin = Goblin("Briar")
-    print(f"{secondGoblin.name} enters the arena with {secondGoblin.health} health.")
+    print(f"{secondGoblin.name} spawns in {ARENA_NAME} with {secondGoblin.health} health.")
 
-    print("But no hero has answered the call... yet.")
+    print("A figure is approaching from the distance...")
 
     Gardener = Hero("Gardener")
-    print(f"{Gardener.name} arrives at the Garden to answer the call! They enter with {Gardener.health} health.")
+    print(f"{Gardener.name} arrives at {ARENA_NAME} to face the danger! They enter with {Gardener.health} health.")
     
     battle(Gardener, goblin)
     battle(Gardener, secondGoblin)
